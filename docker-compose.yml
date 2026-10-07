@@ -1,0 +1,24 @@
+services:
+  # Entwicklung: Jekyll-Serve mit Livereload auf http://localhost:4000
+  dev:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/site
+      # Mount-Punkte, damit Vendor-Gems und Caches nicht durch den Mount überschrieben werden
+      - /site/vendor
+      - /site/_site
+      - /site/.jekyll-cache
+
+  # Produktion: gebaute statische Website über nginx auf http://localhost:8080
+  web:
+    build:
+      context: .
+      target: prod
+    ports:
+      - "8080:80"
+    restart: unless-stopped

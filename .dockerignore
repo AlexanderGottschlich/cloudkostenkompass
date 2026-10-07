@@ -1,0 +1,11 @@
+_site
+.jekyll-cache
+.jekyll-metadata
+vendor
+.bundle
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+*.log
+.DS_Store

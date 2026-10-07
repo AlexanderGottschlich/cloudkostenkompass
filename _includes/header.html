@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.brand.name }} – Startseite">
+      <svg class="brand__mark" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M15.5 8.5l-2.2 4.8-4.8 2.2 2.2-4.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name">{{ site.brand.name }}</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü öffnen">
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+      <span class="nav-toggle__bar" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Hauptnavigation">
+      <ul class="nav__list">
+        <li><a href="{{ '/aws-cost-architecture-assessment/' | relative_url }}" {% if page.url contains 'aws-cost-architecture-assessment' %}aria-current="page"{% endif %}>Assessment</a></li>
+        <li><a href="{{ '/' | relative_url }}#leistungen">Leistungen</a></li>
+        <li><a href="{{ '/' | relative_url }}#ansatz">Ansatz</a></li>
+        <li><a href="{{ '/ueber-mich/' | relative_url }}" {% if page.url contains 'ueber-mich' %}aria-current="page"{% endif %}>Über mich</a></li>
+        <li><a href="{{ '/kontakt/' | relative_url }}" {% if page.url contains 'kontakt' %}aria-current="page"{% endif %}>Kontakt</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm nav__cta" href="{{ '/kontakt/' | relative_url }}">Assessment besprechen</a>
+    </nav>
+  </div>
+</header>

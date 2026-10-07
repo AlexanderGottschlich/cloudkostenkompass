@@ -1,0 +1,366 @@
+---
+layout: default
+title: AWS Cost & Architecture Assessment
+permalink: /aws-cost-architecture-assessment/
+description: >-
+  Das AWS Cost & Architecture Assessment verbindet Kostenanalyse mit technischer
+  Architekturprüfung. Eine priorisierte Übersicht konkreter Optimierungspotenziale –
+  von kurzfristigen Quick Wins bis zu strukturellen Architekturmaßnahmen.
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="eyebrow">Produkt</p>
+      <h1>Verstehen Sie, warum Ihre AWS-Kosten entstehen.</h1>
+      <p class="lede">
+        Das AWS Cost &amp; Architecture Assessment verbindet Kostenanalyse mit
+        technischer Architekturprüfung. Sie erhalten eine priorisierte Übersicht
+        konkreter Optimierungspotenziale – von kurzfristigen Quick Wins bis zu
+        strukturellen Architekturmaßnahmen.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/kontakt/">Assessment besprechen</a>
+        <a class="btn btn--secondary" href="#leistungsumfang">Leistungsumfang ansehen</a>
+      </div>
+      <p class="hero__note">Kompaktes Assessment über wenige Arbeitstage</p>
+    </div>
+
+    <div class="flow-diagram" aria-hidden="true">
+      <p class="flow-diagram__title">Ergebnis</p>
+      <ol>
+        <li><strong>Executive Summary</strong></li>
+        <li><strong>Cost Driver Map</strong></li>
+        <li><strong>Optimization Backlog</strong></li>
+        <li><strong>Quick Wins</strong></li>
+        <li><strong>Structural Improvements</strong></li>
+        <li><strong>Next-Step Roadmap</strong></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Für wen ist das Assessment sinnvoll -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Passung</p>
+      <h2>Für wen ist das Assessment sinnvoll?</h2>
+      <p class="lede">
+        Das Assessment ist kein Standard-Produkt für jede Situation. Es ist sinnvoll,
+        wenn mindestens ein der folgenden Punkte zutrifft.
+      </p>
+    </div>
+
+    <ul class="check-list">
+      <li>AWS-Kosten deutlich gestiegen sind</li>
+      <li>niemand genau erklären kann, wodurch Kosten entstehen</li>
+      <li>Cost Explorer zwar Kostentreiber zeigt, aber keine technische Ursache</li>
+      <li>mehrere Teams oder Accounts unterschiedliche Strukturen verwenden</li>
+      <li>Kubernetes- oder Plattformkosten schwer nachvollziehbar sind</li>
+      <li>FinOps eingeführt werden soll, aber technische Transparenz fehlt</li>
+      <li>Savings Plans oder Reserved Instances nicht das eigentliche Problem lösen</li>
+      <li>Optimierungsideen vorhanden sind, aber Priorisierung fehlt</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Was wird analysiert -->
+<section class="section" id="leistungsumfang">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Leistungsumfang</p>
+      <h2>Was wird analysiert?</h2>
+      <p class="lede">
+        Sieben Bereiche – von der Kostenstruktur bis zu Commitments. Commitments sind
+        Teil der Analyse, aber nicht die zentrale Positionierung.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="scope-block">
+        <h3>Kostenstruktur</h3>
+        <ul>
+          <li>AWS Cost Explorer / CUR</li>
+          <li>Account- und Servicekosten</li>
+          <li>Trends</li>
+          <li>ungewöhnliche Veränderungen</li>
+          <li>Kostenkonzentration</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Compute</h3>
+        <ul>
+          <li>EC2</li>
+          <li>EKS</li>
+          <li>ECS, falls vorhanden</li>
+          <li>Lambda</li>
+          <li>Rightsizing</li>
+          <li>Auslastung</li>
+          <li>Skalierungsmodelle</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Storage</h3>
+        <ul>
+          <li>EBS</li>
+          <li>S3</li>
+          <li>Snapshots</li>
+          <li>Backups</li>
+          <li>Lifecycle</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Netzwerk</h3>
+        <ul>
+          <li>NAT Gateway</li>
+          <li>Data Transfer</li>
+          <li>Cross-AZ</li>
+          <li>Internet Traffic</li>
+          <li>VPC Endpoints</li>
+          <li>Load Balancing</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Kubernetes</h3>
+        <ul>
+          <li>Requests / Limits</li>
+          <li>Node-Auslastung</li>
+          <li>Autoscaling</li>
+          <li>Instanzwahl</li>
+          <li>Workload-Verteilung</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Governance</h3>
+        <ul>
+          <li>Tagging</li>
+          <li>Cost Allocation</li>
+          <li>Ownership</li>
+          <li>Account-Struktur</li>
+          <li>technische Standards</li>
+        </ul>
+      </div>
+      <div class="scope-block">
+        <h3>Commitments</h3>
+        <ul>
+          <li>Savings Plans</li>
+          <li>Reserved Instances</li>
+          <li>bestehende Commitments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ablauf -->
+<section class="section section--alt" id="ablauf">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Ablauf</p>
+      <h2>Fünf Phasen, ein klar abgegrenztes Analyseformat.</h2>
+      <p class="lede">
+        Ein kompaktes Assessment über wenige Arbeitstage – eigenständig
+        entwickelt, kein abgewandeltes Standard-Vorgehen.
+      </p>
+    </div>
+
+    <ol class="process process--5">
+      <li>
+        <h3>Discovery</h3>
+        <p>Ziele, Architektur und Kostenentwicklung verstehen.</p>
+      </li>
+      <li>
+        <h3>Cost Analysis</h3>
+        <p>Relevante Kostentreiber und Trends identifizieren.</p>
+      </li>
+      <li>
+        <h3>Technical Deep Dive</h3>
+        <p>Technische Ursachen hinter den wichtigsten Kostenpositionen untersuchen.</p>
+      </li>
+      <li>
+        <h3>Priorisierung</h3>
+        <p>Maßnahmen bewerten nach Effekt, Aufwand, Risiko und strategischer Wirkung.</p>
+      </li>
+      <li>
+        <h3>Ergebnisworkshop</h3>
+        <p>Erkenntnisse und empfohlene nächste Schritte gemeinsam besprechen.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Deliverables -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Ergebnis</p>
+      <h2>Was Sie erhalten</h2>
+      <p class="lede">
+        Konkrete, priorisierte Ergebnisse – keine automatisierten PDF-Reports.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card">
+        <h3>Executive Summary</h3>
+        <p class="text-muted">
+          Wichtigste Erkenntnisse für Management und technische Verantwortliche.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Cost Driver Map</h3>
+        <p class="text-muted">
+          Welche Services und technischen Strukturen verursachen relevante Kosten?
+        </p>
+      </article>
+      <article class="card">
+        <h3>Optimization Backlog</h3>
+        <p class="text-muted">
+          Priorisierte Liste konkreter Optimierungsmaßnahmen – je mit Problem,
+          technischer Ursache, Empfehlung, erwartetem Effekt, Aufwand, Risiko und
+          Priorität.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Quick Wins</h3>
+        <p class="text-muted">Maßnahmen mit kurzfristigem Effekt.</p>
+      </article>
+      <article class="card">
+        <h3>Structural Improvements</h3>
+        <p class="text-muted">
+          Architektur- oder Plattformänderungen mit langfristiger Wirkung.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Next-Step Roadmap</h3>
+        <p class="text-muted">Welche Maßnahmen sollten zuerst umgesetzt werden?</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Priorisierung -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Priorisierung</p>
+      <h2>Nach Wirkung priorisiert, nicht nach Anzahl der Findings.</h2>
+      <p class="lede">
+        Illustrative Darstellung der Bewertungslogik. Reale Werte entstehen im
+        Assessment auf Basis Ihrer Daten.
+      </p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="matrix">
+        <caption class="visually-hidden">Beispielhafte Priorisierung von Maßnahmen</caption>
+        <thead>
+          <tr>
+            <th scope="col">Maßnahme</th>
+            <th scope="col">Potenzial</th>
+            <th scope="col">Aufwand</th>
+            <th scope="col">Risiko</th>
+            <th scope="col">Priorität</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ungenutzte EBS-Volumes entfernen</td>
+            <td><span class="tag tag--accent">hoch</span></td>
+            <td><span class="tag">niedrig</span></td>
+            <td><span class="tag">niedrig</span></td>
+            <td><span class="tag tag--accent">hoch</span></td>
+          </tr>
+          <tr>
+            <td>VPC Endpoints einführen</td>
+            <td><span class="tag">mittel</span></td>
+            <td><span class="tag">mittel</span></td>
+            <td><span class="tag">niedrig</span></td>
+            <td><span class="tag">mittel</span></td>
+          </tr>
+          <tr>
+            <td>Kubernetes Node Pools neu strukturieren</td>
+            <td><span class="tag tag--accent">hoch</span></td>
+            <td><span class="tag">hoch</span></td>
+            <td><span class="tag">mittel</span></td>
+            <td><span class="tag">strategisch</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Was das Assessment bewusst nicht ist -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Abgrenzung</p>
+      <h2>Was das Assessment bewusst nicht ist</h2>
+    </div>
+
+    <div class="grid grid--3">
+      <article class="card">
+        <h3>Kein automatisierter PDF-Report</h3>
+        <p class="text-muted">
+          Die Analyse wird technisch durchgeführt und im Gespräch verstanden –
+          nicht per Skript generiert.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Keine Rabatt- oder Savings-Plan-Beratung</h3>
+        <p class="text-muted">
+          Commitments sind Teil der Analyse, lösen aber nicht das eigentliche
+          technische Problem.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Keine generischen AWS-Best-Practices</h3>
+        <p class="text-muted">
+          Statt einer Liste allgemeiner Empfehlungen: Kostenanalyse plus
+          technische Ursachenanalyse Ihrer konkreten Umgebung.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Anschlussfähigkeit -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Anschlussfähigkeit</p>
+      <h2>Das Assessment funktioniert eigenständig.</h2>
+      <p class="lede">
+        Daraus können weitere Maßnahmen entstehen – optional, nicht als Paket.
+      </p>
+    </div>
+
+    <ul class="chain">
+      <li>Assessment</li>
+      <li>konkrete Quick Wins</li>
+      <li>Architekturänderungen</li>
+      <li>Infrastructure as Code</li>
+      <li>Plattformstandards</li>
+      <li>FinOps-Prozesse</li>
+      <li>kontinuierliche Kostensteuerung</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Sie möchten verstehen, was Ihre AWS-Kosten tatsächlich treibt?</h2>
+    <p>
+      In einem kurzen Erstgespräch klären wir, welche Kosten- und Architekturdaten
+      vorhanden sind und ob das Assessment für Ihre Situation sinnvoll ist.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="/kontakt/">Assessment besprechen</a>
+    </div>
+    <p class="cta-band__note">Kein Vertriebsgespräch. Eine technische Ersteinschätzung.</p>
+  </div>
+</section>

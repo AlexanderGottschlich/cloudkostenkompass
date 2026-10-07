@@ -1,0 +1,42 @@
+title: CloudKostenKompass
+tagline: Technische Orientierung für wirtschaftlich beherrschbare Cloud-Plattformen
+description: >-
+  CloudKostenKompass verbindet FinOps mit AWS- und Plattformarchitektur.
+  Kostenanalyse plus technische Ursachenanalyse – vom Quick Win bis zur
+  strukturellen Architekturmaßnahme.
+url: "https://cloudkostenkompass.de"
+baseurl: ""
+lang: de
+
+author:
+  name: Alexander Gottschlich
+  email: info@cloudkostenkompass.de
+
+# Kontakt-/Markendaten (zentral für Layouts und Meta-Tags)
+brand:
+  name: CloudKostenKompass
+  domain: cloudkostenkompass.de
+  email: info@cloudkostenkompass.de
+  phone: "+49 160 2665355"
+  address:
+    street: Dreifatigkeitsweg 8
+    zip: "53489"
+    city: Sinzig
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Dockerfile
+  - docker-compose.yml
+  - nginx.conf
+  - vendor
+  - README.md
+  - .dockerignore
+  - .gitignore
+  - .git
+  - .jekyll-cache
+
+sass:
+  style: compressed

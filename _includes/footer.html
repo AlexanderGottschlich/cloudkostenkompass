@@ -1,0 +1,52 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="{{ '/' | relative_url }}">
+          <svg class="brand__mark" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M15.5 8.5l-2.2 4.8-4.8 2.2 2.2-4.8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name">{{ site.brand.name }}</span>
+        </a>
+        <p class="site-footer__tagline">{{ site.tagline }}</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Footer-Navigation">
+        <h2 class="site-footer__heading">Navigation</h2>
+        <ul>
+          <li><a href="{{ '/aws-cost-architecture-assessment/' | relative_url }}">AWS Cost &amp; Architecture Assessment</a></li>
+          <li><a href="{{ '/' | relative_url }}#leistungen">Leistungen</a></li>
+          <li><a href="{{ '/' | relative_url }}#ansatz">Ansatz</a></li>
+          <li><a href="{{ '/ueber-mich/' | relative_url }}">Über mich</a></li>
+          <li><a href="{{ '/kontakt/' | relative_url }}">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__contact">
+        <h2 class="site-footer__heading">Kontakt</h2>
+        <address>
+          {{ site.brand.name }}<br>
+          {{ site.brand.address.street }}<br>
+          {{ site.brand.address.zip }} {{ site.brand.address.city }}
+        </address>
+        <p>
+          <a href="mailto:{{ site.brand.email }}">{{ site.brand.email }}</a>
+        </p>
+      </div>
+
+      <div class="site-footer__legal">
+        <h2 class="site-footer__heading">Rechtliches</h2>
+        <ul>
+          <li><a href="{{ '/impressum/' | relative_url }}">Impressum</a></li>
+          <li><a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.brand.name }}. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>

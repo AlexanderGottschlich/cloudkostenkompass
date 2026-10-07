@@ -1,0 +1,271 @@
+---
+layout: default
+title: ""
+description: >-
+  CloudKostenKompass verbindet FinOps mit AWS- und Plattformarchitektur.
+  Kostenanalyse plus technische Ursachenanalyse – vom Quick Win bis zur
+  strukturellen Architekturmaßnahme.
+---
+
+<!-- 1. Hero -->
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="eyebrow">AWS · FinOps · Plattformarchitektur</p>
+      <h1>Cloud-Kosten verstehen.<br>Technische Ursachen beheben.</h1>
+      <p class="lede">
+        CloudKostenKompass verbindet FinOps mit AWS- und Plattformarchitektur.
+        Statt nur Kostenpositionen zu reduzieren, werden technische Ursachen,
+        strukturelle Ineffizienzen und langfristige Optimierungspotenziale sichtbar.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/aws-cost-architecture-assessment/">AWS-Kosten analysieren</a>
+        <a class="btn btn--secondary" href="#ansatz">Vorgehen ansehen</a>
+      </div>
+      <p class="hero__note">Klar abgegrenztes Analyseformat · kompakt über wenige Arbeitstage</p>
+    </div>
+
+    <div class="flow-diagram" aria-hidden="true">
+      <p class="flow-diagram__title">Analysepfad</p>
+      <ol>
+        <li><strong>AWS Cost</strong></li>
+        <li><strong>Service</strong></li>
+        <li><strong>Ressource</strong></li>
+        <li><strong>Architektur</strong></li>
+        <li><strong>technische Ursache</strong></li>
+        <li><strong>Maßnahme</strong></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Kernthese -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Kernthese</p>
+      <h2>Die AWS-Rechnung zeigt, was teuer ist. Nicht unbedingt warum.</h2>
+      <p class="lede">
+        Cost Explorer und CUR identifizieren Kostentreiber. Sie zeigen aber nicht,
+        welche technische Entscheidung, welche Architektur oder welche
+        Betriebsstruktur dahintersteht. Genau dort setzt CloudKostenKompass an.
+      </p>
+    </div>
+    <blockquote class="thesis">
+      <p>Kostenoptimierung ist häufig Architekturarbeit.</p>
+      <p>
+        Hohe NAT-Gateway-Kosten sind kein Kostenproblem. Sie können ein
+        Architekturproblem sein.
+      </p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- 3. Problem → technische Ursache -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Symptom und Ursache</p>
+      <h2>Was in der Rechnung steht, ist die Wirkung.</h2>
+      <p class="lede">
+        Typische Kostenpositionen und die technischen Ursachen, die real dahinterstehen.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+      <article class="cause-card">
+        <p class="cause-card__symptom">Symptom: Hohe NAT-Gateway-Kosten</p>
+        <p class="cause-card__label">Mögliche technische Ursachen</p>
+        <ul>
+          <li>unnötiges Cross-AZ-Traffic</li>
+          <li>zentrale Routing-Strukturen</li>
+          <li>fehlende VPC Endpoints</li>
+          <li>ungeeignete Netzwerktopologie</li>
+        </ul>
+      </article>
+
+      <article class="cause-card">
+        <p class="cause-card__symptom">Symptom: Hohe Kubernetes-Kosten</p>
+        <p class="cause-card__label">Mögliche technische Ursachen</p>
+        <ul>
+          <li>überdimensionierte Requests</li>
+          <li>fehlendes Autoscaling</li>
+          <li>geringe Node-Auslastung</li>
+          <li>ungeeignete Instanztypen</li>
+        </ul>
+      </article>
+
+      <article class="cause-card">
+        <p class="cause-card__symptom">Symptom: Steigende Storage-Kosten</p>
+        <p class="cause-card__label">Mögliche technische Ursachen</p>
+        <ul>
+          <li>verwaiste Volumes</li>
+          <li>Snapshot-Wachstum</li>
+          <li>fehlende Lifecycle Policies</li>
+          <li>unklare Ownership</li>
+        </ul>
+      </article>
+
+      <article class="cause-card">
+        <p class="cause-card__symptom">Symptom: Kosten lassen sich Teams nicht zuordnen</p>
+        <p class="cause-card__label">Mögliche technische Ursachen</p>
+        <ul>
+          <li>inkonsistentes Tagging</li>
+          <li>fehlende Cost Allocation</li>
+          <li>fehlende technische Standards</li>
+          <li>keine gemeinsame Plattformkonvention</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Ansatz / Methodik -->
+<section class="section section--alt" id="ansatz">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Ansatz</p>
+      <h2>Vier Schritte von der Kostenposition zur strukturellen Verbesserung.</h2>
+      <p class="lede">
+        Ein wiederverwendbares Beratungsmodell – nicht als Marketing, sondern als
+        Arbeitsweise.
+      </p>
+    </div>
+
+    <ol class="process">
+      <li>
+        <h3>Sichtbarkeit</h3>
+        <p>Kostenstruktur und relevante AWS-Services erfassen.</p>
+      </li>
+      <li>
+        <h3>Ursache</h3>
+        <p>Technische Architektur hinter den Kostentreibern untersuchen.</p>
+      </li>
+      <li>
+        <h3>Wirkung</h3>
+        <p>Maßnahmen nach Einsparpotenzial, Aufwand und Risiko bewerten.</p>
+      </li>
+      <li>
+        <h3>Struktur</h3>
+        <p>Quick Wins umsetzen und strukturelle Verbesserungen ableiten.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. Produkt -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Produkt</p>
+      <h2>AWS Cost &amp; Architecture Assessment</h2>
+      <p class="lede">
+        In wenigen Tagen verstehen, wo Ihre AWS-Kosten entstehen, welche
+        technischen Ursachen dahinterstehen und was Sie konkret ändern sollten.
+        Kostenanalyse plus technische Ursachenanalyse – priorisiert nach Wirkung,
+        nicht nach Anzahl der Findings.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="/aws-cost-architecture-assessment/">Assessment ansehen</a>
+        <a class="btn btn--secondary" href="/kontakt/">Assessment besprechen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Leistungen / Beratungsfelder -->
+<section class="section section--alt" id="leistungen">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Leistungen</p>
+      <h2>Beratungsfelder</h2>
+      <p class="lede">
+        Das Assessment ist der konkrete Einstieg. Darüber hinaus stehen weitere
+        Beratungsfelder – bewusst als Felder, nicht als fertige Pakete.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+      <article class="card">
+        <h3>FinOps Enablement</h3>
+        <p class="text-muted">
+          Kostenverantwortung, Prozesse, Kennzahlen und Governance etablieren.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Cloud Architecture Optimization</h3>
+        <p class="text-muted">
+          Kosten-, Betriebs- und Architekturprobleme gemeinsam betrachten.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Platform Standardization</h3>
+        <p class="text-muted">
+          Wiederkehrende Cloud-, Deployment- und Betriebsstrukturen standardisieren
+          und automatisieren.
+        </p>
+      </article>
+      <article class="card">
+        <h3>Cost Allocation &amp; Attribution</h3>
+        <p class="text-muted">
+          Cloud-Kosten technisch nachvollziehbar Teams, Services, Plattformen oder
+          Releases zuordnen.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Expertenpositionierung -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Expertenpositionierung</p>
+      <h2>Architektur und Umsetzung aus einer Hand.</h2>
+      <blockquote class="thesis">
+        <p>
+          Ich analysiere gewachsene Cloud- und Plattformlandschaften, identifiziere
+          wiederkehrende Muster und Ineffizienzen und entwickle daraus
+          standardisierte, automatisierbare und langfristig beherrschbare
+          Strukturen.
+        </p>
+        <p>
+          Ich analysiere nicht nur Kostenreports, sondern kann technische Ursachen
+          auf Ebene von AWS-Architektur, Kubernetes, Terraform, CI/CD und
+          Plattformdesign nachvollziehen.
+        </p>
+      </blockquote>
+      <p class="eyebrow" style="margin-top: 2rem;">Kompetenzfelder</p>
+      <ul class="pill-row">
+        <li>AWS</li>
+        <li>Terraform / OpenTofu</li>
+        <li>Kubernetes</li>
+        <li>GitOps</li>
+        <li>CI/CD</li>
+        <li>Platform Engineering</li>
+        <li>FinOps</li>
+        <li>Cloud Architecture</li>
+        <li>Observability</li>
+        <li>Governance</li>
+      </ul>
+      <div class="btn-row">
+        <a class="arrow-link" href="/ueber-mich/">Mehr über mich</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Sie möchten verstehen, was Ihre AWS-Kosten tatsächlich treibt?</h2>
+    <p>
+      In einem kurzen Erstgespräch klären wir, welche Kosten- und Architekturdaten
+      vorhanden sind und ob das Assessment für Ihre Situation sinnvoll ist.
+    </p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="/kontakt/">Assessment besprechen</a>
+    </div>
+    <p class="cta-band__note">Kein Vertriebsgespräch. Eine technische Ersteinschätzung.</p>
+  </div>
+</section>
