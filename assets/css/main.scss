@@ -857,6 +857,11 @@ strong {
     font-size: 0.9375rem;
     color: $ink-soft;
   }
+
+  strong {
+    color: $ink;
+    font-weight: 600;
+  }
 }
 
 .pill-row {
