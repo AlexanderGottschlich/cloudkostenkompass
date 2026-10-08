@@ -41,6 +41,38 @@ description: >-
   </div>
 </section>
 
+<!-- Beispielhafter Ablauf der Analyse -->
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Methode</p>
+      <h2>Wie die Analyse denkt</h2>
+      <p class="lede">
+        Die Methode verbindet technische Ursache und wirtschaftlichen Effekt – ohne
+        erfundene Zahlen.
+      </p>
+    </div>
+
+    <article class="card">
+      <p class="eyebrow">Exemplarisches Finding</p>
+      <h3>Netzwerk-Traffic führt zu erhöhtem Kostentreiber</h3>
+      <div class="grid grid--2" style="gap: clamp(1rem, 2vw, 1.5rem); margin-top: 1.25rem;">
+        <div>
+          <p class="text-muted"><strong>Symptom:</strong> Hohe NAT-Gateway- und Data-Transfer-Kosten.</p>
+          <p class="text-muted"><strong>Analyse:</strong> Auffälliger Cross-AZ-Traffic zwischen Workloads und zentralen Netzwerkkomponenten.</p>
+          <p class="text-muted"><strong>Technische Ursache:</strong> Netzwerktopologie führt zu unnötigem zonenübergreifendem Datenverkehr.</p>
+          <p class="text-muted"><strong>Finding-Typ:</strong> Platform Finding / Architecture Finding.</p>
+        </div>
+        <div>
+          <p class="text-muted"><strong>Bewertung:</strong> Wirtschaftlicher Effekt – potenziell strukturell und eher wiederkehrend (Run-Rate); Aufwand – abhängig von bestehender Netzwerktopologie; Risiko – vor Umsetzung zu prüfen; Nachhaltigkeit – bei zentraler Lösung höher.</p>
+          <p class="text-muted"><strong>Mögliche Richtung:</strong> Routing prüfen, AZ-Affinität untersuchen, VPC Endpoints bewerten, zentrale Netzwerkpfade hinterfragen.</p>
+          <p class="text-muted">Dieses Beispiel dient ausschließlich zur Erklärung der Methodik.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <!-- Für wen ist das Assessment sinnvoll -->
 <section class="section section--alt">
   <div class="container">
@@ -268,6 +300,8 @@ description: >-
             <th scope="col">Aufwand</th>
             <th scope="col">Risiko</th>
             <th scope="col">Priorität</th>
+            <th scope="col">Effekt</th>
+            <th scope="col">Typ</th>
           </tr>
         </thead>
         <tbody>
@@ -277,6 +311,8 @@ description: >-
             <td><span class="tag">niedrig</span></td>
             <td><span class="tag">niedrig</span></td>
             <td><span class="tag tag--accent">hoch</span></td>
+            <td>einmalig / Run-Rate-teilw.</td>
+            <td>Workload Finding</td>
           </tr>
           <tr>
             <td>VPC Endpoints einführen</td>
@@ -284,6 +320,8 @@ description: >-
             <td><span class="tag">mittel</span></td>
             <td><span class="tag">niedrig</span></td>
             <td><span class="tag">mittel</span></td>
+            <td>wiederkehrend (Run-Rate)</td>
+            <td>Platform Finding</td>
           </tr>
           <tr>
             <td>Kubernetes Node Pools neu strukturieren</td>
@@ -291,6 +329,8 @@ description: >-
             <td><span class="tag">hoch</span></td>
             <td><span class="tag">mittel</span></td>
             <td><span class="tag tag--accent">hoch</span></td>
+            <td>wiederkehrend (Run-Rate)</td>
+            <td>Architecture Finding</td>
           </tr>
         </tbody>
       </table>
